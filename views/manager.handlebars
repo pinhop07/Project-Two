@@ -1,0 +1,117 @@
+<div class = "row">
+  <div class="mainDiv">
+    <div class="eventCreate">
+    <p class="center-align">Create an Event</p>
+      <form class="" action="/create/event" method="POST">
+
+        <div class="form-group">
+          <label for="evnt">Event Name:</label>
+          <input type="text" id="evnt" name="name" class="validate">
+        </div>
+
+        <div class="form-group">
+          <label for="dayte">Date:</label>
+          <input type="date" id="dayte" name="date" class="validate">
+        </div>
+
+        <div class="form-group">
+          <label for="startTime">Start time:</label>
+          <input type="time" id="startTime" name="startTime" class="validate">
+        </div>
+
+        <div class="form-group">
+          <label for="endTime">End Time:</label>
+          <input type="time" id="endTime" name="endTime" class="validate">
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" class="validate">
+        </div>
+
+        <div class="form-group">
+          <label for="availSpot">Available Spot:</label>
+
+          <input type="number" min="1" max="1000" id="availSpot" name="availableSpots" class="validate">
+        </div>
+        </table>
+        <button class="waves-effect waves-light btn-large red accent-4 ">Add Event</button>
+
+      </form>
+</div>
+<div class="managerCalendar">
+      <div class ="container">
+      	<div id="cal">
+      		<div class="header">
+      			<span class="left button" id="prev"> &lang; </span>
+      			<span class="left hook"></span>
+      			<span class="month-year" id="label"> December 2016 </span>
+      			<span class="right hook" id=""></span>
+      			<span class="right button" id="next"> &rang; </span>
+      		</div>
+      		<table id="days">
+      			<tr>
+      				<td>sun</td>
+      				<td>mon</td>
+      				<td>tue</td>
+      				<td>wed</td>
+      				<td>thu</td>
+      				<td>fri</td>
+      				<td>sat</td>
+      			</tr>
+      		</table>
+      		<div id="cal-frame">
+      			<table class="curr">
+      				<tr><td class="nil"></td><td class="nil"></td><td class="today">1</td><td class="calDateData">2</td><td class="calDateData">3</td><td class="calDateData">4</td><td class="calDateData">5</td></tr>
+      				<tr><td class="calDateData">6</td><td class="calDateData">7</td><td class="calDateData">8</td><td class="calDateData">9</td><td class="calDateData">10</td><td>11</td><td class="calDateData">12</td></tr>
+      				<tr><td class="calDateData">13</td><td class="calDateData">14</td><td class="calDateData">15</td><td class="calDateData">16</td><td class="calDateData">17</td><td class="calDateData">18</td><td class="calDateData">19</td></tr>
+      				<tr><td class="calDateData">20</td><td class="calDateData">21</td><td class="calDateData">22</td><td class="calDateData">23</td><td class="calDateData">24</td><td class="calDateData">25</td><td class="calDateData">26</td></tr>
+      				<tr><td class="calDateData">27</td><td class="calDateData">28</td><td class="calDateData">29</td><td class="calDateData">30</td><td class="nil"></td><td class="nil"></td><td class="nil"></td></tr>
+      			</table>
+      		</div>
+      	</div>
+
+    <div class="modalManager">
+      <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <span class="close">x</span>
+         
+          {{#each evt}}
+
+                <p> Name : {{this.name}}</p>
+                <p> Date : {{this.date}}</p>
+                <p> Starts: {{this.startTime}}</p>
+                <p> Ends: {{this.endTime}} </p>
+
+                <form action="delete/event/{{this.id}}?_method=DELETE" method="POST">
+                  <button type="submit" class="btn red accent-4 ">delete</button>
+                </form>
+
+          {{/each}}
+
+      </div>
+      </div>
+    </div>
+
+      </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <script src="calendar/calendar.js"></script>
+<script>
+var cal = CALENDAR();
+cal.init();
+</script> -->
+
+
+<!-- <div class="Testingthis">
+  {{#each evt}}
+      <li>
+        <p>ID : {{this.name}} {{this.date}} {{this.startTime}} {{this.name}} </p>
+      </li>
+  {{/each}}
+</div> -->

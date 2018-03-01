@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #daaa00;
+  margin-top: 110px;
+  font: Georgia, serif;
+  overflow: hidden;
+}
+
+.teamLogo {
+  color: #daaa00;
+  position: absolute;
+  float: left;
+  top: -2%;
+  width: 100%;
+  left: 5%;
+  font-size: 14px;
+  font-family: 'Bungee', cursive;
+  z-index: 23000;
+}
+
+#icon-logo{
+  margin: 20px;
+}
+
+.teamLogo >  h1 {
+  font-size: 30px;
+  float: left;
+}
+
+.googleCalendarGM {
+  top: 5%;
+  position: absolute;
+  z-index: 10001;
+  width: 700px;
+  height: 400px;
+  left: 24%;
+}
+
+.imgMain > #banner_backdrop {
+  position: relative;
+  background: url("../img/res10.jpg") repeat-x;
+  width: 2553px;
+  height: 600px;
+  z-index: 1px;	
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+  background-size: cover;
+  
+  -webkit-animation: aniMain 15s linear infinite;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+
+  margin-bottom: 0px;
+	padding: 0px;
+}
+
+.mainFooter {
+  position: absolute;
+  background-color: black;
+  bottom: 0px;
+  width: 100%;
+  height: 115px;
+  font-family: 'Bungee', cursive;
+}
+
+.socialRef {
+  position: absolute;
+  color: #daaa00;
+  left: 40%;
+  height: 100px;
+  width: 400px;
+}
+.social-icon {
+  display: center;
+  float: left;
+  right: 40px;
+  color: #fff;
+}
+
+.socialText {
+  font-family: 'Bungee', cursive;
+  font-size: 30px;
+}
+
+
+ul.social-icons {
+    margin-top: 0px;
+    position: absolute;
+    left: 20px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #daaa00;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+/*sdfdsf you left of here from the top up makine social icons, u can still pres z to return
+maye change icons, need space between icons, circle icon woul be betteR?*/
+
+
+
+
+.mainHeader{
+  position: absolute;
+  background-color: black;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  font-family: 'Bungee', cursive;
+}
+
+.managerBtn {
+  position: absolute;
+  top: 250px;
+  right: 32.34px;
+}
+
+.managerBtn > p {
+  position: absolute;
+  top: 50px;
+  left: 19.343px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.imgMain {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 608px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+
+}
+
+@-webkit-keyframes aniMain {
+  from{ right: 0px;}
+	to { right: 851px; }
+}
+
+.mainOptionWin {
+   border-radius: 25px;
+   background: white;
+   padding: 20px;
+   width: 300px;
+   height: 400px;
+   position: absolute;
+   left: 38%;
+   top: 20%;
+   box-shadow: 0px 0px 5px 2px black;
+   /*overflow-y: scroll;*/
+}
+.mainOptionScroll {
+   border-radius: 25px;
+   background: white;
+   padding: 20px;
+   width: 300px;
+   height: 400px;
+   position: absolute;
+   left: 38%;
+   top: 20%;
+   box-shadow: 0px 0px 5px 2px black;
+   overflow-y: scroll;
+}
+
+.eventCreate {
+   border-radius: 25px;
+   background: white;
+   z-index: 13000;
+   padding: 20px;
+   width: 400px;
+   height: 500px;
+   position: absolute;
+   right: 1%;
+   top: 14.2%;
+   box-shadow: 0px 0px 5px 2px black;
+    overflow-y: scroll;
+}
+
+.resBtn {
+  position: absolute;
+  width: 270px;
+  height: 110px;
+  border-bottom: solid black;
+  top: 75px;
+  left: 18.343px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.resBtnHolder {
+  position: absolute;
+  left: 40px;
+}
+
+
+.resvPage {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(209,43,82);
+}
+
+.resCalendar {
+  border-radius: 25px;
+  background: rgb(255,255,255);
+  padding: 20px;
+  width: 1300px;
+  height: 600px;
+  position: absolute;
+  left: 100px;
+  top: 10%;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.calendarName {
+  position: absolute;
+  left: 150px;
+  font-size: 40px;
+  height: 50px;
+  width: 1000px;
+  border-bottom: solid black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.calendarName > p {
+  position: absolute;
+  left: 350px;
+  bottom: 0px;
+}
+
+.appColummns {
+  position: absolute;
+  width: 1100px;
+  height: 450px;
+  top: 100px;
+  left: 130px;
+}
+.appColummns > ul > li {
+  margin-left: 10px;
+  float:left;
+  display: inline;
+  display: block;
+  width: 250px;
+  height: 450px;
+  left: 0px;
+
+  /*background-color: rgb(185,246,202);*/
+
+}
+
+li > .appt1 {
+  background-color: rgb(185,246,202);
+  height: 450px;
+  border-radius: 25px;
+}
+li > .appt2 {
+  background-color: rgb(255,255,141);
+  height: 450px;
+  border-radius: 25px;
+}
+
+li > .appt3 {
+  background-color: rgb(132,255,255);
+  height: 450px;
+  border-radius: 25px;
+}
+
+li > .appt4 {
+  background-color: rgb(128,216,255);
+  height: 450px;
+  border-radius: 25px;
+}
+
+.date-appt1 {
+  position: absolute;
+  display: inline;
+  font-size: 20px;
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  top: 20px;
+  margin: 5px;
+  width: 240px;
+  height: 20px;
+  border-bottom: solid black;
+}
+
+.date-appt1 > p {
+  position: absolute;
+  bottom: 0px;
+  left: 65px;
+}
+
+.res-date-blockholders {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  width: 230px;
+  height: 380px;
+}
+
+.res-date-blocks {
+  height: 40px;
+  left: 10px;
+  background-color: rgb(209,43,82);
+  width: 210px;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.res-date-blocks > p {
+  position: relative;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  left: 10px;
+  top: 5px;
+}
+
+.beer-btn-dark {
+  font-family: 'Bungee', cursive;
+  background-color: black;
+  color: #daaa00;
+  border-radius: 10px;
+}
+
+.beer-btn > a {
+  color: #daaa00;
+  font-family: 'Bungee', cursive;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.beer-btn-light {
+  font-family: 'Bungee', cursive;
+  background-color: black;
+  color: #daaa00;
+  border-radius: 10px;
+}
