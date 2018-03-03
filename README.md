@@ -15,7 +15,7 @@ You can give a brief listing of the technologies you've learned and applied here
 
 ## Getting Started
 
-https://rooster-booster.herokuapp.com/
+https://beer-tours.herokuapp.com/
 
 ![Screenshot](/public/assets/screenshot/Index_Screenshot.png?raw=true)
 Home page of app
