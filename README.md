@@ -43,12 +43,6 @@ Home page of app
 
 ## Authors
     
-  *  Mark Pinho -     - [null](https://github.com)
-  *  Paul Pinho -  - [pinhop07](http://github.com)
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Our awesome instructor, Dan Vassallo
-* Our equally awesome TAs, Nate Tuvera & Jimmy Mona
+  *  Mark Pinho -  [mgpinho88](https://github.com)
+  *  Paul Pinho -  [pinhop07](http://github.com)
 
