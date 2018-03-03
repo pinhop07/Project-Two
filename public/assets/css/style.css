@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(225,225,225);
+  background-color: #daaa00;
   font: Georgia, serif;
   overflow: hidden;
 }
@@ -13,12 +13,15 @@ body {
 .teamLogo {
   position: absolute;
   float: left;
+  padding-top: 10px;
   top: -2%;
   width: 100%;
   left: 5%;
   font-size: 14px;
   font-family: 'Bungee', cursive;
   z-index: 23000;
+  background-color: black;
+  color: #daaa00;
 }
 
 #icon-logo{
@@ -44,7 +47,7 @@ body {
   background: url("../img/res10.jpg") repeat-x;
   width: 2553px;
   height: 600px;
-	
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -58,9 +61,17 @@ body {
 	padding: 0px;
 }
 
+.imgMain {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 608px;
+  width: 100%;
+  overflow: hidden;
+}
+
 .mainFooter {
   position: absolute;
-  background-color: #7EE7CC;
+  background-color: black;
   bottom: 0px;
   width: 100%;
   height: 115px;
@@ -79,7 +90,8 @@ body {
 }
 
 .socialText {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bungee', cursive;
+  color: #daaa00;
   font-size: 30px;
 }
 
@@ -174,18 +186,19 @@ ul.social-icons {
     background-color: #e25714;
 }
 
-/*sdfdsf you left of here from the top up makine social icons, u can still pres z to return
-maye change icons, need space between icons, circle icon woul be betteR?*/
-
-
+.beer-btn {
+  font-family: 'Bungee', cursive;
+  color: #daaa00;
+  background-color: black;
+}
 
 
 .mainHeader{
   position: absolute;
-  background-color: #7EE7CC;
+  background-color: black;
   top: 0px;
   width: 100%;
-  height: 100px;
+  height: 115px;
 }
 
 .managerBtn {
@@ -202,47 +215,47 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
   font-family: 'Montserrat', sans-serif;
 }
 
-.imgMain {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  height: 608px;
-  width: 100%;
-  overflow: hidden;
-}
-
 @-webkit-keyframes aniMain {
   from{ right: 0px;}
 	to { right: 851px; }
 }
 
 .mainOptionWin {
-   border-radius: 25px;
-   background: rgb(255,255,255);
+   border-radius: 15px;
    padding: 20px;
    width: 300px;
    height: 400px;
    position: absolute;
    left: 38%;
    top: 20%;
-   box-shadow: 10px 10px 5px #888888;
+   background: whitesmoke;
+   box-shadow: 0px 0px 5px 3px black;
    /*overflow-y: scroll;*/
 }
 .mainOptionScroll {
    border-radius: 25px;
-   background: rgb(255,255,255);
+   
    padding: 20px;
    width: 300px;
    height: 400px;
    position: absolute;
    left: 38%;
    top: 20%;
-   box-shadow: 10px 10px 5px #888888;
+   background: whitesmoke;
+   box-shadow: 0px 0px 5px 3px black;
    overflow-y: scroll;
+}
+
+.mainOptionScroll::-webkit-scrollbar{
+  display: none;
+}
+
+#resMBtn {
+  margin: 0px auto;
 }
 
 .eventCreate {
    border-radius: 25px;
-   background: rgb(255,255,255);
    z-index: 13000;
    padding: 20px;
    width: 400px;
@@ -250,8 +263,13 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
    position: absolute;
    right: 1%;
    top: 14.2%;
-   box-shadow: 10px 10px 5px #888888;
+   background: whitesmoke;
+   box-shadow: 0px 0px 5px 3px black;
     overflow-y: scroll;
+}
+
+.eventCreate::-webkit-scrollbar{
+  display: none;
 }
 
 .resBtn {
@@ -266,6 +284,7 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
 }
 
 .resBtnHolder {
+  text-align: center;
   position: absolute;
   left: 10px;
 }
@@ -279,14 +298,14 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
 
 .resCalendar {
   border-radius: 25px;
-  background: rgb(255,255,255);
+  background: black;
   padding: 20px;
   width: 1300px;
   height: 600px;
   position: absolute;
   left: 100px;
   top: 10%;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 0px 0px 5px 3px black;
 }
 
 .calendarName {

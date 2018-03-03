@@ -28,7 +28,7 @@
 
           <input type="number" min="1" max="1000" id="availSpot" name="availableSpots" class="validate">
         </div>
-        <button class="waves-effect waves-light btn-large red accent-4 ">Add Event</button>
+        <button class="waves-effect waves-light btn-large beer-btn accent-4 ">Add Event</button>
       </form>
     </div>
     <div class="managerCalendar">
@@ -76,7 +76,7 @@
                   <p> Ends: {{this.endTime}} </p>
 
                   <form action="delete/event/{{this.id}}?_method=DELETE" method="POST">
-                    <button type="submit" class="btn red accent-4 ">delete</button>
+                    <button type="submit" class="btn beer-btn accent-4 ">delete</button>
                   </form>
 
                 {{/each}}
