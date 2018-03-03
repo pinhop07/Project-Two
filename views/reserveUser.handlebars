@@ -28,46 +28,25 @@
 			</table>
 		</div>
 	</div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-<!-- Modal content -->
-<div class="modal-content">
-    <span class="close">x</span>
-
-		{{#each evt}}
-
-					<p> Name: {{this.name}}</p>
-					<p> Date: {{this.date}}</p>
-					<p> Starts: {{this.startTime}}</p>
-					<p> Ends: {{this.endTime}} </p>
-
-		{{/each}}
-
-    <form action="create/reservation" method="POST">
-      <button type="submit" class="btn btn-primary red accent-4" id="reserveBtn">Reserve</button>
-    </form>
-
-    <!-- <p><form>Name:<br>
-      <input type="text" name="name"><br>
-        Phone Number:<br>
-      <input type="text" name="phone"><br>
-        Email:<br>
-      <input type="text" name="email"><br>
-      <input type="submit" value="Submit" id="modalSubmit">
-      </form>
-    </p> -->
-
-
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+				<span class="close">x</span>
+					{{#each evt}}
+						<p> Name: {{this.name}}</p>
+						<p> Date: {{this.date}}</p>
+						<p> Starts: {{this.startTime}}</p>
+						<p> Ends: {{this.endTime}} </p>
+					{{/each}}
+				<form action="create/reservation" method="POST">
+					<button type="submit" class="btn btn-primary red accent-4" id="reserveBtn">Reserve</button>
+				</form>
+		</div>
+	</div>
 </div>
-
-</div>
-
-</div>
-
 <script src="calendar/calendar.js"></script>
 <script>
-var cal = CALENDAR();
-cal.init();
+	var cal = CALENDAR();
+	cal.init();
 </script>

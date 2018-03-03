@@ -5,14 +5,12 @@
 }
 
 body {
-  background-color: #daaa00;
-  margin-top: 110px;
+  background-color: rgb(225,225,225);
   font: Georgia, serif;
   overflow: hidden;
 }
 
 .teamLogo {
-  color: #daaa00;
   position: absolute;
   float: left;
   top: -2%;
@@ -46,8 +44,7 @@ body {
   background: url("../img/res10.jpg") repeat-x;
   width: 2553px;
   height: 600px;
-  z-index: 1px;	
-
+	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -63,16 +60,14 @@ body {
 
 .mainFooter {
   position: absolute;
-  background-color: black;
+  background-color: #7EE7CC;
   bottom: 0px;
   width: 100%;
   height: 115px;
-  font-family: 'Bungee', cursive;
 }
 
 .socialRef {
   position: absolute;
-  color: #daaa00;
   left: 40%;
   height: 100px;
   width: 400px;
@@ -81,15 +76,17 @@ body {
   display: center;
   float: left;
   right: 40px;
-  color: #fff;
 }
 
 .socialText {
-  font-family: 'Bungee', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
 }
 
 
+.social-icon {
+    color: #fff;
+}
 ul.social-icons {
     margin-top: 0px;
     position: absolute;
@@ -138,7 +135,7 @@ ul.social-icons {
     background-color: #322f30;
 }
 .fa-rss:hover {
-    background-color: #daaa00;
+    background-color: #eb8231;
 }
 .fa-youtube {
     padding:10px 14px;
@@ -185,11 +182,10 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
 
 .mainHeader{
   position: absolute;
-  background-color: black;
+  background-color: #7EE7CC;
   top: 0px;
   width: 100%;
   height: 100px;
-  font-family: 'Bungee', cursive;
 }
 
 .managerBtn {
@@ -212,8 +208,6 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
   height: 608px;
   width: 100%;
   overflow: hidden;
-  z-index: 2;
-
 }
 
 @-webkit-keyframes aniMain {
@@ -223,32 +217,32 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
 
 .mainOptionWin {
    border-radius: 25px;
-   background: white;
+   background: rgb(255,255,255);
    padding: 20px;
    width: 300px;
    height: 400px;
    position: absolute;
    left: 38%;
    top: 20%;
-   box-shadow: 0px 0px 5px 2px black;
+   box-shadow: 10px 10px 5px #888888;
    /*overflow-y: scroll;*/
 }
 .mainOptionScroll {
    border-radius: 25px;
-   background: white;
+   background: rgb(255,255,255);
    padding: 20px;
    width: 300px;
    height: 400px;
    position: absolute;
    left: 38%;
    top: 20%;
-   box-shadow: 0px 0px 5px 2px black;
+   box-shadow: 10px 10px 5px #888888;
    overflow-y: scroll;
 }
 
 .eventCreate {
    border-radius: 25px;
-   background: white;
+   background: rgb(255,255,255);
    z-index: 13000;
    padding: 20px;
    width: 400px;
@@ -256,16 +250,16 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
    position: absolute;
    right: 1%;
    top: 14.2%;
-   box-shadow: 0px 0px 5px 2px black;
+   box-shadow: 10px 10px 5px #888888;
     overflow-y: scroll;
 }
 
 .resBtn {
   position: absolute;
   width: 270px;
-  height: 110px;
+  height: 100px;
   border-bottom: solid black;
-  top: 75px;
+  top: 100px;
   left: 18.343px;
   font-size: 18px;
   font-weight: 400;
@@ -273,7 +267,7 @@ maye change icons, need space between icons, circle icon woul be betteR?*/
 
 .resBtnHolder {
   position: absolute;
-  left: 40px;
+  left: 10px;
 }
 
 
@@ -399,25 +393,4 @@ li > .appt4 {
   color: white;
   left: 10px;
   top: 5px;
-}
-
-.beer-btn-dark {
-  font-family: 'Bungee', cursive;
-  background-color: black;
-  color: #daaa00;
-  border-radius: 10px;
-}
-
-.beer-btn > a {
-  color: #daaa00;
-  font-family: 'Bungee', cursive;
-  font-size: 20px;
-  font-weight: bolder;
-}
-
-.beer-btn-light {
-  font-family: 'Bungee', cursive;
-  background-color: black;
-  color: #daaa00;
-  border-radius: 10px;
 }

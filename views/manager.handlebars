@@ -1,45 +1,37 @@
 <div class = "row">
   <div class="mainDiv">
     <div class="eventCreate">
-    <p class="center-align">Create an Event</p>
+      <p class="center-align">Create an Event</p>
       <form class="" action="/create/event" method="POST">
-
         <div class="form-group">
           <label for="evnt">Event Name:</label>
           <input type="text" id="evnt" name="name" class="validate">
         </div>
-
         <div class="form-group">
           <label for="dayte">Date:</label>
           <input type="date" id="dayte" name="date" class="validate">
         </div>
-
         <div class="form-group">
           <label for="startTime">Start time:</label>
           <input type="time" id="startTime" name="startTime" class="validate">
         </div>
-
         <div class="form-group">
           <label for="endTime">End Time:</label>
           <input type="time" id="endTime" name="endTime" class="validate">
         </div>
-
         <div class="form-group">
           <label for="location">Location:</label>
           <input type="text" id="location" name="location" class="validate">
         </div>
-
         <div class="form-group">
           <label for="availSpot">Available Spot:</label>
 
           <input type="number" min="1" max="1000" id="availSpot" name="availableSpots" class="validate">
         </div>
-        </table>
         <button class="waves-effect waves-light btn-large red accent-4 ">Add Event</button>
-
       </form>
-</div>
-<div class="managerCalendar">
+    </div>
+    <div class="managerCalendar">
       <div class ="container">
       	<div id="cal">
       		<div class="header">
@@ -70,48 +62,29 @@
       			</table>
       		</div>
       	</div>
+        <div class="modalManager">
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">x</span>
+              
+                {{#each evt}}
 
-    <div class="modalManager">
-      <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-          <span class="close">x</span>
-         
-          {{#each evt}}
+                  <p> Name : {{this.name}}</p>
+                  <p> Date : {{this.date}}</p>
+                  <p> Starts: {{this.startTime}}</p>
+                  <p> Ends: {{this.endTime}} </p>
 
-                <p> Name : {{this.name}}</p>
-                <p> Date : {{this.date}}</p>
-                <p> Starts: {{this.startTime}}</p>
-                <p> Ends: {{this.endTime}} </p>
+                  <form action="delete/event/{{this.id}}?_method=DELETE" method="POST">
+                    <button type="submit" class="btn red accent-4 ">delete</button>
+                  </form>
 
-                <form action="delete/event/{{this.id}}?_method=DELETE" method="POST">
-                  <button type="submit" class="btn red accent-4 ">delete</button>
-                </form>
+                {{/each}}
 
-          {{/each}}
-
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
-
-      </div>
-</div>
     </div>
   </div>
 </div>
-
-
-<!-- <script src="calendar/calendar.js"></script>
-<script>
-var cal = CALENDAR();
-cal.init();
-</script> -->
-
-
-<!-- <div class="Testingthis">
-  {{#each evt}}
-      <li>
-        <p>ID : {{this.name}} {{this.date}} {{this.startTime}} {{this.name}} </p>
-      </li>
-  {{/each}}
-</div> -->
